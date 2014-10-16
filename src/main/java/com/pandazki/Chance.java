@@ -23,7 +23,7 @@ public class Chance {
     }
 
     //generates a random character
-    public char charactor(String pool)
+    public char character(String pool)
     {
         if (pool == null || pool.length() == 0)
         {
@@ -39,7 +39,7 @@ public class Chance {
         char[] cs = new char[len];
         for (int i = 0; i < len; i++)
         {
-            cs[i] = charactor(pool);
+            cs[i] = character(pool);
         }
 
         return new String(cs);
