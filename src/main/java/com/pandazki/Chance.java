@@ -18,7 +18,7 @@ public class Chance {
 
     public Chance(RandomGenerator r)
     {
-        if (r == null) throw new ArithmeticException("RandomGenerator should not be null.");
+        if (r == null) throw new IllegalArgumentException("RandomGenerator should not be null.");
         this.r = r;
     }
 
